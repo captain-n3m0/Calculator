@@ -5,4 +5,11 @@
 //  Created by Debjit Naskar on 06/05/23.
 //
 
-import Foundation
+import UIKit
+
+UIApplicationMain(
+    CommandLine.argc,
+    CommandLine.unsafeArgv,
+    nil,
+    NSStringFromClass(AppDelegate.self)
+)

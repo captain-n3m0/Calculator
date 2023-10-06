@@ -1,8 +1,14 @@
-//
-//  AppDelegate.swift
-//  Calculator
-//
-//  Created by Debjit Naskar on 06/05/23.
-//
+import UIKit
 
-import Foundation
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    var window: UIWindow?
+    
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        // Override point for customization after application launch.
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = CalculatorViewController()
+        window?.makeKeyAndVisible()
+        return true
+    }
+}
